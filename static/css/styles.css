@@ -1,0 +1,792 @@
+html,body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 200vh;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+@font-face {
+  font-family: 'FuenteMontserrat';
+  src: url('../fonts/Montserrat-ThinItalic.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'FuenteFina';
+  src: url('../fonts/fina2.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'FuenteBiza';
+  src: url('../fonts/Bizantheum.otf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'FuenteBonita3';
+  src: url('../fonts/letra-bonita3.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'FuenteBonita4';
+  src: url('../fonts/letrabonita4.ttf')  format('truetype');
+}
+:root {
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1
+}
+body {
+  color: black;
+background-color: #fff;
+  justify-content: center;
+  font-family: 'FuenteBonita3', sans-serif;
+  height: 100vh;
+}
+
+.image-container {
+  background-image: url('../images/caro.jpg');
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: center;
+  display: flex;
+  height: 500px;
+  border: 1px;
+  padding: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+  box-sizing: border-box;
+  filter:opacity(70%)
+}
+
+.title_caro{
+  text-align: center;
+  font-size: 70px;
+  font-family: 'FuenteBonita4';
+  color: #557e40;
+}
+
+.mis_xv{
+  text-align: center;
+  font-size: 50px;
+  font-family: 'FuenteBonita4';
+  color: #557e40;
+  margin: 0;
+}
+
+.flores-pie{
+margin: 20px;
+}
+
+
+.seccion_faltan {
+
+font-size: 70px;
+font-family: 'FuenteBonita4';
+color: #557e40;
+background-image: url('../images/Tiana 3 xl.png'), url('../images/Tiana 3 ch.webp');
+background-position: left top, right top;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana */
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.contenedor-faltan{
+margin-top: 60px;
+margin-bottom: 60px;
+}
+
+/* Media queries para ajustar el comportamiento en diferentes tamaños de pantalla */
+
+
+.donde_cuando{
+text-align: center;
+
+font-size: 70px;
+font-family: 'FuenteBonita4';
+color: #557e40;
+background-image: url('../images/Tiana 3 ch.png');
+background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+background-position: center; /* Centra la imagen en el contenedor */
+height: 100vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana */
+padding-top: 60px;
+padding-bottom: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.section {
+  width: 100%; 
+  padding: 70px; 
+  border: #44673245 10px solid;
+  background-color: #ffffff; 
+  
+  text-align: center; 
+}
+.section_transparente{
+  width: 100%; 
+  padding: 70px; 
+  margin-top: 200px;
+  background-color: #ffffff00; 
+  border-radius: 10px; 
+  text-align: center; 
+}
+
+.section h2{
+  font-family: 'FuenteBonita4';
+  font-size: 40px;
+  color: #557e40;
+}
+
+.section_transparente h2{
+  font-family: 'FuenteBonita4';
+  font-size: 40px;
+  color: #557e40;;
+}
+
+.section p{
+  font-size: 20px;
+  color: rgb(114, 114, 114);
+  font-family: 'FuenteBonita3';
+}
+
+.section a{
+font-size: 20px;
+color: rgb(114, 114, 114);
+font-family: 'FuenteBonita3';
+text-decoration: none;
+}
+
+.section a:hover{
+text-decoration:underline
+
+}
+
+.contador {
+  display: flex;
+  color: #557e40;
+  justify-content: center; 
+  align-items: center;
+
+  font-family: 'FuenteBonita3';
+  width: 100%; 
+  max-width: 100%; 
+  padding: 10px; 
+  box-sizing: border-box;
+}
+
+.contenedor-dias-numero{
+display: flex;
+color: #557e40;
+justify-content: center; 
+align-items: center;
+font-family: 'FuenteBonita3';
+width: 100%; 
+max-width: 100%; 
+box-sizing: border-box;
+}
+
+.contenedor-dias{
+display: flex;
+color: #557e40;
+justify-content: center; 
+align-items: center;
+font-family: 'FuenteBonita3';
+width: 100%; 
+max-width: 100%; 
+
+box-sizing: border-box;
+}
+
+.contenedor-dias-numero h1,
+.contenedor-dias-numero h2 {
+  margin: 0 5px;
+  font-size: 12rem;
+}
+
+.contenedor-dias h1,
+.contenedor-dias h2 {
+  margin: 0 5px;
+  font-size: 3rem;
+}
+
+.contador h1,
+.contador h2 {
+  margin: 0 5px;
+  font-size: 2rem;
+}
+
+
+@media (max-width: 768px) {
+  .contador h1,
+  .contador h2 {
+      font-size: 2rem;
+  }
+  .contenedor-dias h1,
+  .contenedor-dias h2 {
+      font-size: 2rem;
+  }
+  .contenedor-dias-numero h1,
+.contenedor-dias-numero h2 {
+  font-size: 6rem;
+}
+}
+
+@media (max-width: 576px) {
+  .contador h1,
+  .contador h2 {
+      font-size: 1.5rem;
+  }
+  .contenedor-dias h1,
+  .contenedor-dias h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .contador h1,
+  .contador h2 {
+      font-size: 1.2rem;
+  }
+  .contenedor-dias h1,
+  .contenedor-dias h2 {
+    font-size: 1.2rem;
+  }
+}
+img {
+
+object-fit: cover;
+transform-origin: left;
+}
+
+.hacienda-container{
+  max-width: 100%;
+  height: auto;
+}
+.hacienda-container img{
+  width: 70%;
+  height: auto;
+}
+
+p{
+  font-family: 'FuenteBonita3';
+  color: rgb(114, 114, 114);
+}
+
+#toggleAudio {
+  position: fixed;
+  bottom: 20px; /* Ajusta la distancia desde abajo */
+  right: 20px; /* Ajusta la distancia desde la derecha */
+  z-index: 9999; /* Asegura que esté por encima de otros elementos */
+  border:#ADCF9C 3px solid;
+}
+
+#btn-play{
+  display: none;
+}
+
+
+
+
+/* Estilos para el efecto de las imagenes horizontalmente */
+
+
+
+/* hide scrollbar */
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+.external {
+  overflow: hidden;
+  height: 100vh;
+  border: #44673245 10px solid;
+  text-align: center;
+  font-size: 60px;
+  font-family: 'FuenteBonita4';
+  color: #557e40;
+  background-color: #b2de9c35;
+
+
+}
+
+.mi_galeria{
+  padding: 5%;
+  font-size: 60px;
+  font-family: 'FuenteBonita4';
+  color: #557e40;
+  text-align: center;
+  
+}
+
+.horizontal-scroll-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vh;
+  transform: rotate(-90deg) translate3d(0,-100vh,0);
+  transform-origin: right top;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+  height: 100vw;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  
+}
+
+.left-animation {
+  opacity: 0;
+  overflow: hidden;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+}
+.img-wrapper {
+  transform: rotate(90deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  transform-origin: 50% 50%;
+  transform: rotate(90deg) translateZ(.1px) scale(0.9) translateX(0px) translateY(-3vh);
+  transition: 1s;
+}
+
+.img-wrapper:hover {
+ min-height: 65vh;
+}
+
+.slower {
+  transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(0%) translateY(-10vh);
+}
+.slower1 {
+  transform: rotate(90deg) translateZ(-.25px) scale(1.05) translateX(0%) translateY(8vh);
+}
+.slower2 {
+  transform: rotate(90deg) translateZ(-.3px) scale(1.3) translateX(0%) translateY(2vh);
+}
+.slower-down {
+  transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(0%) translateY(16vh) ;
+}
+.faster {
+  transform: rotate(90deg) translateZ(.15px) scale(0.8) translateX(0%) translateY(14vh) ;
+}
+.faster1 {
+  transform: rotate(90deg) translateZ(.05px) scale(0.8) translateX(0%) translateY(10vh) ;
+}
+.fastest {
+  transform: rotate(90deg) translateZ(.22px) scale(0.7) translateX(-10vh) translateY(-15vh) ;
+}
+.vertical {
+   transform: rotate(90deg) translateZ(-.15px) scale(1.15) translateX(0%) translateY(0%) ;
+}
+.last {
+  transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(25vh) translateY(-8vh) ;
+}
+
+.img-wrapper .img-scroll-horizontal {
+   overflow: hidden;
+  display: block;
+  padding: 1vh ;
+  background: #bceea379;
+  box-shadow: 0 10px 50px #00000082;
+}
+
+
+.img-scroll-horizontal {
+  max-width: 45vh;
+  max-height: 50vh;
+  transition: .5s;
+  vertical-align: top;
+  filter: saturate(40%) sepia(30%) hue-rotate(5deg);
+}
+
+.img-scroll-horizontal:hover {
+  filter: none;
+}
+
+
+/* Fin de Estilos para el efecto de las imagenes horizontalmente */
+
+.wallet {
+  --bg-color: #b7dea3;
+  --bg-color-light: #ffffff;
+  --text-color-hover: #ffffff;
+  --box-shadow-color: #99dc78;
+}
+
+
+.modal-content {
+
+  background: #fff !important;
+  border-top-right-radius: 10px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  position: relative !important;
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04) !important;
+  transition: all 0.3s ease-out !important;
+  text-decoration: none !important;
+}
+
+.card-card:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+    0 24px 46px var(--box-shadow-color);
+}
+
+.card-card:hover .overlay {
+  transform: scale(27) translateZ(0);
+}
+
+.card-card:hover .circle {
+  border-color: var(--bg-color-light);
+  background: var(--bg-color);
+}
+
+.card-card:hover .circle:after {
+  background: var(--bg-color-light);
+}
+
+.card-card:hover p {
+  color: var(--text-color-hover);
+
+}
+
+.card-card p {
+  font-size: 47px;
+  color: #4c5656;
+  margin-top: 30px;
+  z-index: 1000;
+  transition: color 0.3s ease-out;
+}
+
+.circle {
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+#card-open-icon{
+  display: none;
+}
+.circle:hover #card-icon{
+  display: none;
+}
+
+.circle:hover #card-open-icon{
+  display: block;
+}
+
+.circle:after {
+  content: "";
+  width: 118px;
+  height: 118px;
+  display: block;
+  position: absolute;
+  background: var(--bg-color);
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
+  transition: opacity 0.3s ease-out;
+}
+
+.circle svg {
+  z-index: 10000;
+  transform: translateZ(0);
+}
+
+.overlay {
+  width: 38px;
+  position: absolute;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  top: 35px;
+  left: 220px;
+  z-index: 1;
+  transition: transform 0.3s ease-out;
+}
+
+
+
+.timeline {
+border-radius: 10px;
+width: 250px;
+text-align: center;
+
+}
+
+.timeline h2{
+margin-bottom: 100px;
+margin-top: 100px;
+font-size: 74px;
+font-family: 'FuenteBonita4';
+color: #557e40;
+}
+
+.event {
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+position: relative;
+z-index: 2; 
+}
+
+
+.event::before {
+content: '';
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+width: 3px;
+height: 125px;
+background: #557e40;
+z-index: 3; 
+
+}
+
+.time {
+background: #557e40;
+color: white;
+border-radius: 20px;
+padding: 5px 10px;
+margin-bottom: 20px;
+flex-shrink: 0;
+margin-right: 40px;
+}
+
+.details {
+text-align: left;
+flex-grow: 1;
+margin-left: 40px;
+margin-bottom: 20px;
+}
+
+.details h3 {
+margin: 0;
+font-size: 20px;
+color: #333;
+}
+
+.details img {
+width: 40px;
+height: 40px;
+margin-top: 5px;
+}
+
+.contenedor-timeline {
+
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0;
+background-image: url('../images/Tiana 3 xl.png'), url('../images/Tiana 3 ch.webp');
+background-position: left top, right top;
+background-repeat: no-repeat;
+background-size: cover;
+height:1000px;
+z-index: 1;
+}
+
+
+
+.hero {
+background-image: url('../images/caro-grande.jpg'); /* Reemplaza con la ruta de tu imagen */
+background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+background-position: center; /* Centra la imagen en el contenedor */
+background-attachment: fixed; /* Fija la imagen de fondo */
+height: 100vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana */
+display: flex;
+justify-content: center;
+align-items: flex-end; /* Alinea el contenido al final del contenedor */
+position: relative;
+}
+
+@media (max-width: 768px) {
+.hero {
+  background-attachment: scroll; /* Cambia a scroll en pantallas pequeñas para mejor rendimiento */
+}
+
+}
+
+.hero::after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5); /* Oscurece la imagen de fondo */
+z-index: 1;
+}
+
+.content {
+color: #fff;
+text-align: center;
+position: relative;
+z-index: 2;
+margin-bottom: 100px;
+}
+
+.content h1 {
+font-size: 108px;
+color: #fff;
+margin-bottom: 10px;
+font-family: 'FuenteBonita4';
+}
+
+.content p {
+font-size: 24px;
+margin-bottom: 5px;
+color: #fff;
+font-family: 'FuenteBonita3';
+}
+
+.gift-section {
+
+text-align: center;
+padding-top: 100px;
+color: #333;
+background-image: url('../images/Tiana 3 xl.png'), url('../images/Tiana 3 ch.webp');
+background-position: left top, right top;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana */
+
+}
+
+/* Media queries para ajustar el comportamiento en diferentes tamaños de pantalla */
+
+
+.gift-section h2 {
+font-size: 70px;
+color: #557e40;
+margin-bottom: 20px;
+font-family:'FuenteBonita4'
+}
+
+.gift-section p {
+  font-size: 20px;
+  color: #557e40;
+  }
+
+.gift-section .intro {
+font-size: 20px;
+margin-bottom: 40px;
+}
+
+.gift-options {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.gift-option {
+background: rgba(255, 255, 255, 0.8);
+padding: 20px;
+margin: 10px;
+border-radius: 10px;
+text-align: center;
+width: 350px;
+height: 250px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gift-option img {
+max-width: 130px;
+margin-bottom: 20px;
+}
+
+.gift-option p {
+margin: 10px 0;
+}
+
+.gift-option button {
+background-color: #557e40;
+color: white;
+border: none;
+padding: 10px 20px;
+font-size: 16px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.gift-option button:hover {
+background-color: #446732;
+}
+
+.fade-in {
+opacity: 0; /* Initially hidden */
+transform: translateY(20px); /* Slightly translate down */
+transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+
+.asistencia {
+
+height: 100%;
+font-family: 'FuenteBonita4';
+background-color: #44673245;
+color: #446732;
+
+}
+
+.asistencia .card {
+padding: 50px;
+  display: flex;
+align-items: center;
+justify-content: center;
+color: #446732;
+}
+
+
+.img-confirmar {
+background-image: url('../images/caro-grande.jpg'); /* Reemplaza con la ruta de tu imagen */
+background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+background-position: center; /* Centra la imagen en el contenedor */
+height: 100%;
+border-radius: 5px;
+contain: content;
+max-height: 800px;
+}
+
+#btn-confirm-asistencia{
+  border: #44673245 3px solid;
+}
+
+.text-confirm{
+background-image: url('../images/fondo_flores.png'); /* Reemplaza con la ruta de tu imagen */
+background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+background-position: center; /* Centra la imagen en el contenedor */
+color: #446732;
+}
+

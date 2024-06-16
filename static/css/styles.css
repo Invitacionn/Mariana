@@ -642,9 +642,7 @@ position: relative;
 
 @media (max-width: 768px) {
 .hero {
-  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-  background-position: center; /* Centra la imagen en el contenedor */
-  background-attachment: fixed; /* Fija la imagen de fondo */
+  background-attachment: scroll; /* Cambia a scroll en pantallas pequeñas para mejor rendimiento */
 }
 
 }

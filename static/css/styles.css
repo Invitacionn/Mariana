@@ -87,7 +87,7 @@ margin: 20px;
 
 .seccion_faltan {
 
-font-size: 70px;
+font-size: 75px;
 font-family: 'FuenteBonita4';
 color: #709060;
 background-image: url('../images/hojas-oscuras1.png'), url('../images/hojas-oscuras2.png');
@@ -184,13 +184,11 @@ text-decoration:underline
   display: flex;
   color: #709060;
   justify-content: center; 
+  background-color: #ffffff82;
   align-items: center;
-  background-color: #ffffff6d;
-  padding: 10px;
   font-family: 'FuenteBonita3';
   width: 100%; 
-  max-width: 100%; 
-  padding: 10px; 
+  max-width: 100%;  
   box-sizing: border-box;
 }
 
@@ -213,7 +211,6 @@ align-items: center;
 font-family: 'FuenteBonita3';
 width: 100%; 
 max-width: 100%; 
-background-color: #ffffff6d;
 padding: 10px;
 box-sizing: border-box;
 }
@@ -872,9 +869,4 @@ color: #446732;
   color: #fff;
   font-family: 'FuenteBonita3';
   margin: 0;
-}
-
-.te_espero{
-  padding: 20px;
-  background-color: #ffffff6d;
 }

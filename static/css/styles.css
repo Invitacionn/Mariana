@@ -680,62 +680,81 @@ font-family: 'FuenteBonita3';
 }
 
 .gift-section {
-
-text-align: center;
-padding-top: 100px;
-color: #333;
-background-image: url('../images/Tiana 3 xl.png'), url('../images/Tiana 3 ch.webp');
-background-position: left top, right bottom;
-background-repeat: no-repeat;
-background-size: 500px;
-height: 100vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana */
-
+  text-align: center;
+  padding: 100px 20px 100px 20px;
+  color: #333;
+  background-image: url('../images/Tiana 3 xl.png'), url('../images/Tiana 3 ch.webp');
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh; /* Ajuste de tamaño mínimo basado en la altura de la ventana */
+  box-sizing: border-box;
 }
 
 /* Media queries para ajustar el comportamiento en diferentes tamaños de pantalla */
 
-
 .gift-section h2 {
-font-size: 70px;
-color: #709060;
-margin-bottom: 20px;
-font-family:'FuenteBonita4'
+  font-size: 70px;
+  color: #709060;
+  margin-bottom: 20px;
+  font-family: 'FuenteBonita4';
 }
 
 .gift-section p {
   font-size: 20px;
   color: #709060;
-  }
+}
 
 .gift-section .intro {
-font-size: 20px;
-margin-bottom: 40px;
+  font-size: 20px;
+  margin-bottom: 40px;
 }
 
 .gift-options {
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .gift-option {
-background: rgba(255, 255, 255, 0.8);
-padding: 20px;
-margin: 10px;
-border-radius: 10px;
-text-align: center;
-width: 350px;
-height: 250px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 350px;
+  height: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .gift-option img {
-max-width: 130px;
-margin-bottom: 20px;
+  max-width: 130px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
-.gift-option p {
-margin: 10px 0;
+@media (max-width: 768px) {
+  .gift-section {
+      padding: 50px 10px;
+  }
+
+  .gift-section h2 {
+      font-size: 50px;
+  }
+
+  .gift-section p {
+      font-size: 18px;
+  }
+
+  .gift-section .intro {
+      font-size: 18px;
+  }
+
+  .gift-option {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+  }
 }
 
 .gift-option button {

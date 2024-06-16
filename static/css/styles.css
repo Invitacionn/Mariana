@@ -643,30 +643,28 @@ overflow: hidden; /* Asegura que nada se desborde fuera del contenedor */
 }
 
 .hero::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Oscurece la imagen de fondo */
-  z-index: 1;
-  }
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5); /* Oscurece la imagen de fondo */
+z-index: 1;
+}
 
 /* Estilo para pantallas medianas (tablets) */
 @media (max-width: 768px) {
   .hero {
-    background-attachment: scroll; /* Permite un mejor scroll en dispositivos táctiles */
     height: 100vh; /* Ajusta la altura para pantallas más pequeñas */
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .hero {
-    background-attachment: scroll; /* Permite un mejor scroll en dispositivos táctiles */
-    height: 100vh; /* Ajusta la altura para pantallas más pequeñas */
+    height: 80vh; /* Ajusta la altura para pantallas más pequeñas */
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -675,18 +673,9 @@ overflow: hidden; /* Asegura que nada se desborde fuera del contenedor */
 /* Estilo para pantallas pequeñas (celulares) */
 @media (max-width: 480px) {
   .hero {
-    background-attachment: scroll;
     background-size: cover; /* Ajusta la imagen para que se vea completa */
     height: 100vh; /* Ajusta la altura para pantallas aún más pequeñas */
     align-items: center; /* Centra el contenido verticalmente en pantallas pequeñas */
-  }
-
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .hero {
-      background-attachment: scroll;
-      height: 60vh;
-      
-    }
   }
 }
 

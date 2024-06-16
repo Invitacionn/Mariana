@@ -629,22 +629,33 @@ z-index: 1;
 
 
 .hero {
-background-image: url('../images/caro-incio.jpeg'); /* Reemplaza con la ruta de tu imagen */
-background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-background-position: center; /* Centra la imagen en el contenedor */
-background-attachment: fixed; /* Fija la imagen de fondo */
-height: 100vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana */
+background-image: url('../images/caro-incio.jpeg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+height: 100vh;
 display: flex;
 justify-content: center;
-align-items: flex-end; /* Alinea el contenido al final del contenedor */
+align-items: flex-end;
 position: relative;
 }
 
+/* Estilo para pantallas medianas (tablets) */
 @media (max-width: 768px) {
-.hero {
-  background-attachment: scroll; /* Cambia a scroll en pantallas pequeñas para mejor rendimiento */
+  .hero {
+    background-attachment: scroll; /* Permite un mejor scroll en dispositivos táctiles */
+    height: 80vh; /* Ajusta la altura para pantallas más pequeñas */
+  }
 }
 
+/* Estilo para pantallas pequeñas (celulares) */
+@media (max-width: 480px) {
+  .hero {
+    background-attachment: scroll;
+    background-size: cover; /* Ajusta la imagen para que se vea completa */
+    height: 60vh; /* Ajusta la altura para pantallas aún más pequeñas */
+    align-items: center; /* Centra el contenido verticalmente en pantallas pequeñas */
+  }
 }
 
 .hero::after {

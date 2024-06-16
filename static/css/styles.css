@@ -640,7 +640,7 @@ align-items: flex-end; /* Alinea el contenido al final del contenedor */
 position: relative;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 .hero {
   background-size: cover;
   background-attachment: scroll; /* Cambia a scroll en pantallas pequeñas para mejor rendimiento */

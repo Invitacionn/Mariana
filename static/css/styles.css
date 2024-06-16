@@ -643,14 +643,12 @@ position: relative;
 @media (max-width: 800px) {
 .hero {
   background-size: cover;
-  background-attachment: scroll; /* Cambia a scroll en pantallas pequeñas para mejor rendimiento */
 }
 
 }
 @media (max-width: 1100px) {
   .hero {
     background-size: 650PX;
-    background-attachment: scroll; /* Cambia a scroll en pantallas pequeñas para mejor rendimiento */
     background-repeat: no-repeat;
   }
   

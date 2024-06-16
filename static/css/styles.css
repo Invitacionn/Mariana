@@ -828,3 +828,45 @@ color: #446732;
   background-color: #ffffff84;
   padding: 10px;
 }
+
+.container-inicio {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Hace que el contenedor ocupe toda la altura de la pantalla */
+  background: url('../images/caro-inicio2.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Alinea el contenido hacia la parte inferior */
+}
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+  filter: brightness(0.5); /* Aplica un filtro oscuro */
+}
+.text-overlay {
+  position: absolute;
+  bottom: 10%; /* Mueve el texto hacia abajo */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+}
+.text-overlay h1 {
+  font-size: 108px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: 'FuenteBonita4';
+  margin: 0;
+}
+.text-overlay p {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-family: 'FuenteBonita3';
+  margin: 0;
+}

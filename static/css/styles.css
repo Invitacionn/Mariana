@@ -649,8 +649,9 @@ position: relative;
 }
 @media (max-width: 1100px) {
   .hero {
-    background-size: contain;
+    background-size: 1100PX;
     background-attachment: scroll; /* Cambia a scroll en pantallas pequeñas para mejor rendimiento */
+    background-repeat: no-repeat;
   }
   
   }

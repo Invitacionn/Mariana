@@ -653,29 +653,11 @@ background-color: rgba(0, 0, 0, 0.5); /* Oscurece la imagen de fondo */
 z-index: 1;
 }
 
-/* Estilo para pantallas medianas (tablets) */
-@media (max-width: 768px) {
-  .hero {
-    height: 100vh; /* Ajusta la altura para pantallas más pequeñas */
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
-
 @media (max-width: 1200px) {
   .hero {
     height: 80vh; /* Ajusta la altura para pantallas más pequeñas */
     background-size: contain;
     background-repeat: no-repeat;
-  }
-}
-
-/* Estilo para pantallas pequeñas (celulares) */
-@media (max-width: 480px) {
-  .hero {
-    background-size: cover; /* Ajusta la imagen para que se vea completa */
-    height: 100vh; /* Ajusta la altura para pantallas aún más pequeñas */
-    align-items: center; /* Centra el contenido verticalmente en pantallas pequeñas */
   }
 }
 

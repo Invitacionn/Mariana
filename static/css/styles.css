@@ -833,12 +833,18 @@ color: #446732;
   position: relative;
   width: 100%;
   height: 100vh; /* Hace que el contenedor ocupe toda la altura de la pantalla */
-  background: url('../images/caro-inicio2.jpeg') no-repeat center center fixed;
+  background: url('../images/caro-inicio2.jpeg') no-repeat center center;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: flex-end; /* Alinea el contenido hacia la parte inferior */
 }
+
+@media (max-width: 768px) {
+  .container-inicio {
+      background-attachment: scroll;
+}}
+
 .background-image {
   position: absolute;
   top: 0;

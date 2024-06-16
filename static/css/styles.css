@@ -559,7 +559,7 @@ margin-bottom: 100px;
 margin-top: 100px;
 font-size: 74px;
 font-family: 'FuenteBonita4';
-color: #89b274;
+color: #709060;
 }
 
 .event {
@@ -819,6 +819,9 @@ color: #446732;
     background-color: #ffffff; 
     
     text-align: center; 
+  }
+  .contenedor-timeline{
+    background-size:contain;
   }
 }
 .display-4{

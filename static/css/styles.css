@@ -69,14 +69,14 @@ background-color: #fff;
   text-align: center;
   font-size: 70px;
   font-family: 'FuenteBonita4';
-  color: #557e40;
+  color: #709060;
 }
 
 .mis_xv{
   text-align: center;
   font-size: 50px;
   font-family: 'FuenteBonita4';
-  color: #557e40;
+  color: #709060;
   margin: 0;
 }
 
@@ -89,11 +89,11 @@ margin: 20px;
 
 font-size: 70px;
 font-family: 'FuenteBonita4';
-color: #557e40;
-background-image: url('../images/Tiana 3 xl.png'), url('../images/Tiana 3 ch.webp');
-background-position: left top, right top;
+color: #709060;
+background-image: url('../images/hojas-oscuras1.png'), url('../images/hojas-oscuras2.png');
+background-position: right top, left bottom;
 background-repeat: no-repeat;
-background-size: cover;
+background-size:650px;
 height: 100vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana */
 display: flex;
 align-items: center;
@@ -112,11 +112,11 @@ text-align: center;
 
 font-size: 70px;
 font-family: 'FuenteBonita4';
-color: #557e40;
+color: #709060;
 background-image: url('../images/Tiana 3 ch.png');
 background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
 background-position: center; /* Centra la imagen en el contenedor */
-height: 100vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana */
+height: 30vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana */
 padding-top: 60px;
 padding-bottom: 60px;
 display: flex;
@@ -144,13 +144,13 @@ justify-content: center;
 .section h2{
   font-family: 'FuenteBonita4';
   font-size: 40px;
-  color: #557e40;
+  color: #709060;
 }
 
 .section_transparente h2{
   font-family: 'FuenteBonita4';
   font-size: 40px;
-  color: #557e40;;
+  color: #709060;;
 }
 
 .section p{
@@ -173,7 +173,7 @@ text-decoration:underline
 
 .contador {
   display: flex;
-  color: #557e40;
+  color: #709060;
   justify-content: center; 
   align-items: center;
 
@@ -186,7 +186,7 @@ text-decoration:underline
 
 .contenedor-dias-numero{
 display: flex;
-color: #557e40;
+color: #709060;
 justify-content: center; 
 align-items: center;
 font-family: 'FuenteBonita3';
@@ -197,7 +197,7 @@ box-sizing: border-box;
 
 .contenedor-dias{
 display: flex;
-color: #557e40;
+color: #709060;   
 justify-content: center; 
 align-items: center;
 font-family: 'FuenteBonita3';
@@ -318,7 +318,7 @@ p{
   text-align: center;
   font-size: 60px;
   font-family: 'FuenteBonita4';
-  color: #557e40;
+  color: #709060;
   background-color: #b2de9c35;
 
 
@@ -328,7 +328,7 @@ p{
   padding: 5%;
   font-size: 60px;
   font-family: 'FuenteBonita4';
-  color: #557e40;
+  color: #709060;
   text-align: center;
   
 }
@@ -414,7 +414,7 @@ p{
   max-height: 50vh;
   transition: .5s;
   vertical-align: top;
-  filter: saturate(40%) sepia(30%) hue-rotate(5deg);
+  /* filter: saturate(40%) sepia(30%) hue-rotate(5deg); */
 }
 
 .img-scroll-horizontal:hover {
@@ -541,6 +541,7 @@ p{
 border-radius: 10px;
 width: 250px;
 text-align: center;
+padding-bottom: 2px;
 
 }
 
@@ -549,7 +550,7 @@ margin-bottom: 100px;
 margin-top: 100px;
 font-size: 74px;
 font-family: 'FuenteBonita4';
-color: #557e40;
+color: #89b274;
 }
 
 .event {
@@ -568,13 +569,13 @@ left: 50%;
 transform: translateX(-50%);
 width: 3px;
 height: 125px;
-background: #557e40;
+background: #89b274;
 z-index: 3; 
 
 }
 
 .time {
-background: #557e40;
+background: #89b274;
 color: white;
 border-radius: 20px;
 padding: 5px 10px;
@@ -608,10 +609,10 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin: 0;
-background-image: url('../images/Tiana 3 xl.png'), url('../images/Tiana 3 ch.webp');
-background-position: left top, right top;
+background-image: url('../images/eucalipto1.png'), url('../images/eucalipto2.png');
+background-position: left top, right bottom;
 background-repeat: no-repeat;
-background-size: cover;
+background-size:650px;
 height:1000px;
 z-index: 1;
 }
@@ -619,7 +620,7 @@ z-index: 1;
 
 
 .hero {
-background-image: url('../images/caro-grande.jpg'); /* Reemplaza con la ruta de tu imagen */
+background-image: url('../images/caro1.jpeg'); /* Reemplaza con la ruta de tu imagen */
 background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
 background-position: center; /* Centra la imagen en el contenedor */
 background-attachment: fixed; /* Fija la imagen de fondo */
@@ -676,9 +677,9 @@ text-align: center;
 padding-top: 100px;
 color: #333;
 background-image: url('../images/Tiana 3 xl.png'), url('../images/Tiana 3 ch.webp');
-background-position: left top, right top;
+background-position: left top, right bottom;
 background-repeat: no-repeat;
-background-size: cover;
+background-size: 500px;
 height: 100vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana */
 
 }
@@ -688,14 +689,14 @@ height: 100vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventan
 
 .gift-section h2 {
 font-size: 70px;
-color: #557e40;
+color: #709060;
 margin-bottom: 20px;
 font-family:'FuenteBonita4'
 }
 
 .gift-section p {
   font-size: 20px;
-  color: #557e40;
+  color: #709060;
   }
 
 .gift-section .intro {
@@ -730,7 +731,7 @@ margin: 10px 0;
 }
 
 .gift-option button {
-background-color: #557e40;
+background-color: #709060;
 color: white;
 border: none;
 padding: 10px 20px;
@@ -770,13 +771,13 @@ color: #446732;
 
 
 .img-confirmar {
-background-image: url('../images/caro-grande.jpg'); /* Reemplaza con la ruta de tu imagen */
+background-image: url('../images/caro-final.jpeg'); /* Reemplaza con la ruta de tu imagen */
 background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
 background-position: center; /* Centra la imagen en el contenedor */
 height: 100%;
 border-radius: 5px;
 contain: content;
-max-height: 800px;
+max-height: 900px;
 }
 
 #btn-confirm-asistencia{
@@ -790,3 +791,13 @@ background-position: center; /* Centra la imagen en el contenedor */
 color: #446732;
 }
 
+.mensaje_inicio{
+  padding: 50px;
+  font-size: 35px;
+  background-color: #44673245;
+  border-radius: 5px;
+}
+.display-4{
+  background-color: #ffffff84;
+  padding: 10px;
+}

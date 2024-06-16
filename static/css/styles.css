@@ -185,7 +185,8 @@ text-decoration:underline
   color: #709060;
   justify-content: center; 
   align-items: center;
-
+  background-color: #ffffff6d;
+  padding: 10px;
   font-family: 'FuenteBonita3';
   width: 100%; 
   max-width: 100%; 
@@ -212,7 +213,8 @@ align-items: center;
 font-family: 'FuenteBonita3';
 width: 100%; 
 max-width: 100%; 
-
+background-color: #ffffff6d;
+padding: 10px;
 box-sizing: border-box;
 }
 
@@ -870,4 +872,9 @@ color: #446732;
   color: #fff;
   font-family: 'FuenteBonita3';
   margin: 0;
+}
+
+.te_espero{
+  padding: 20px;
+  background-color: #ffffff6d;
 }

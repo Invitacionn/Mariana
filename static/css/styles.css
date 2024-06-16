@@ -93,7 +93,7 @@ color: #709060;
 background-image: url('../images/hojas-oscuras1.png'), url('../images/hojas-oscuras2.png');
 background-position: right top, left bottom;
 background-repeat: no-repeat;
-background-size:650px;
+background-size:contain;
 height: 100vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana */
 display: flex;
 align-items: center;
@@ -125,6 +125,15 @@ justify-content: center;
 }
 
 .section {
+  width: 100%; 
+  padding: 70px; 
+  border: #44673245 10px solid;
+  background-color: #ffffff; 
+  
+  text-align: center; 
+}
+
+.section-mensaje-inicio{
   width: 100%; 
   padding: 70px; 
   border: #44673245 10px solid;
@@ -801,6 +810,15 @@ color: #446732;
 @media (max-width: 768px) {
   .mensaje_inicio {
       font-size: 16px;
+      padding: 10px;
+  }
+  .section{
+    width: 100%; 
+    padding: 20px; 
+    border: #44673245 10px solid;
+    background-color: #ffffff; 
+    
+    text-align: center; 
   }
 }
 .display-4{

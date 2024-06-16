@@ -645,7 +645,7 @@ position: relative;
   .hero {
     background-attachment: scroll; /* Permite un mejor scroll en dispositivos táctiles */
     height: 100vh; /* Ajusta la altura para pantallas más pequeñas */
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 }
@@ -655,6 +655,7 @@ position: relative;
   .hero {
     background-attachment: scroll;
     height: 80vh;
+    background-size: contain;
   }
 }
 
@@ -663,6 +664,7 @@ position: relative;
   .hero {
     background-attachment: scroll;
     height: 60vh;
+    background-size: contain;
   }
 }
 

@@ -2,8 +2,7 @@ html,body {
   height: 100%;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  background-attachment: scroll;
+  height: 200vh;
 }
 
 * {
@@ -630,16 +629,21 @@ z-index: 1;
 
 
 .hero {
-background-image: url('../images/caro-incio.jpeg');
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
-height: 100vh;
+background-image: url('../images/caro-incio.jpeg'); /* Reemplaza con la ruta de tu imagen */
+background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+background-position: center; /* Centra la imagen en el contenedor */
+background-attachment: fixed; /* Fija la imagen de fondo */
+height: 100vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana */
 display: flex;
 justify-content: center;
-align-items: flex-end;
+align-items: flex-end; /* Alinea el contenido al final del contenedor */
 position: relative;
-overflow: hidden; /* Asegura que nada se desborde fuera del contenedor */
+}
+
+@media (max-width: 768px) {
+.hero {
+  background-attachment: scroll; /* Cambia a scroll en pantallas pequeñas para mejor rendimiento */
+}
 
 }
 
@@ -652,14 +656,6 @@ width: 100%;
 height: 100%;
 background-color: rgba(0, 0, 0, 0.5); /* Oscurece la imagen de fondo */
 z-index: 1;
-}
-
-@media (max-width: 1200px) {
-  .hero {
-    height: 80vh; /* Ajusta la altura para pantallas más pequeñas */
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
 }
 
 .content {

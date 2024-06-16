@@ -650,12 +650,19 @@ position: relative;
   }
 }
 
-@media (max-width: 1100px) {
+/* Estilo para iPad de 10.2 pulgadas en orientación vertical */
+@media only screen and (min-device-width: 810px) and (max-device-width: 810px) and (orientation: portrait) {
   .hero {
-    background-attachment: scroll; /* Permite un mejor scroll en dispositivos táctiles */
-    height: 80vh; /* Ajusta la altura para pantallas más pequeñas */
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 80vh;
+  }
+}
+
+/* Estilo para iPad de 10.2 pulgadas en orientación horizontal */
+@media only screen and (min-device-width: 1080px) and (max-device-width: 1080px) and (orientation: landscape) {
+  .hero {
+    background-attachment: scroll;
+    height: 60vh;
   }
 }
 

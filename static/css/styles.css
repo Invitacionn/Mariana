@@ -823,6 +823,9 @@ color: #446732;
   .contenedor-timeline{
     background-size:contain;
   }
+  .hero{
+    background-size: contain;
+  }
 }
 .display-4{
   background-color: #ffffff84;

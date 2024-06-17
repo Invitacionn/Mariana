@@ -343,18 +343,21 @@ p{
 
 .horizontal-scroll-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Cambiado de column a row para desplazamiento horizontal */
   align-items: center;
-  width: 100vh;
-  transform: rotate(-90deg) translate3d(0,-100vh,0);
-  transform-origin: right top;
-  overflow-y: auto;
-  overflow-x: hidden;
+  width: 100%; /* Ajustar el ancho para que ocupe el espacio necesario */
+  transform: none; /* Quitar rotación, puedes manejarlo con otras técnicas */
+  overflow-x: auto; /* Asegúrate de que el desplazamiento horizontal esté permitido */
+  overflow-y: hidden; /* Desactivar el desplazamiento vertical */
   padding: 0;
-  height: 100vw;
+  height: auto; /* Ajustar la altura según el contenido */
   perspective: 1px;
   transform-style: preserve-3d;
-  
+  scroll-snap-type: x mandatory; /* Para mejorar la experiencia de desplazamiento */
+}
+
+.horizontal-scroll-wrapper {
+  -webkit-overflow-scrolling: touch; /* Para una experiencia de desplazamiento más suave en iOS */
 }
 
 .left-animation {
@@ -366,14 +369,14 @@ p{
   transform: translateY(50px);
 }
 .img-wrapper {
-  transform: rotate(90deg);
+  flex: 0 0 auto; /* Asegura que los elementos hijos no se reduzcan */
+  min-width: 40vh; /* Ajustar según tus necesidades */
+  transform: rotate(0deg); /* Quitar rotación en elementos individuales */
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 40vh;
-  transform-origin: 50% 50%;
-  transform: rotate(90deg) translateZ(.1px) scale(0.9) translateX(0px) translateY(-3vh);
   transition: 1s;
+  scroll-snap-align: start; /* Para alineación de desplazamiento */
 }
 
 .img-wrapper:hover {
@@ -889,3 +892,17 @@ color: #446732;
   font-family: 'FuenteBonita3';
   margin: 0;
 }
+
+.section-fotos {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  max-height: 50%;
+  max-width: 50%;
+  object-fit: contain; /* Esto asegura que las imágenes se ajusten sin deformarse */
+}
+

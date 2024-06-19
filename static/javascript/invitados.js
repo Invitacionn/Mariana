@@ -12,7 +12,6 @@ export const getInvitado = (uuid) => {
         }
     })
 
-    console.log(array)
 
 
     return invitado

@@ -9,3 +9,6 @@ const formsURl = `https://docs.google.com/forms/d/e/1FAIpQLScLLyaK9LGChkGF1-Ni2-
 
 const anchorConfirmar = document.getElementById('btn-confirm-asistencia')
 anchorConfirmar.href = formsURl
+
+const nombreElemento = document.getElementById('invitado_nombre_confirmacion')
+nombreElemento.innerText = invitadoObj.nombre

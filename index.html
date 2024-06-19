@@ -1,67 +1,120 @@
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
-        <!-- Bootstrap CSS -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
-        <!-- Additional CSS -->
-        <link rel="stylesheet" type="text/css" href="static/css/styles.css">
-    
-        <!-- Favicon -->
-        <link rel="icon" type="image/png" href="static/images/postcard.png">
-    
-        <!-- Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
-        <!-- GSAP JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-        
-        <!-- Popper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-        
-        <!-- Slick JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    
-        <!-- Additional JS -->
-        <script src="static/javascript/script.js"></script>
-    
-        <!-- Meta tags -->
-        <meta name="theme-color" content="#a5b89c">
-        
-        <title>Invitacion XV años Caroline</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-<div class="modal fade" id="BienvenidaModal" tabindex="-1" aria-labelledby="exampleModalCenterTitle" data-bs-backdrop="static" data-bs-keyboard="false"  aria-hidden="true">
+    <!-- Additional CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="static/images/postcard.png" />
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- GSAP JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+
+    <!-- Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Meta tags -->
+    <meta name="theme-color" content="#a5b89c" />
+
+    <title>Invitacion XV años Caroline</title>
+  </head>
+
+  <div
+    class="modal fade"
+    id="BienvenidaModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalCenterTitle"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    aria-hidden="true"
+  >
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content card-card wallet">
-            
-                <div class="overlay"></div>
-                <div class="circle" data-bs-dismiss="modal" onclick="play_music()">
-                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                    <svg id="card-icon" style="color: rgb(52, 52, 52);" width="54" height="54" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="2.68159" y="3.5" width="18.5" height="17" rx="4" stroke="currentColor" stroke-width="1.5"/>
-                        <path d="M2.72875 7.58978L9.93399 11.7198C10.5383 12.0709 11.2238 12.2557 11.9216 12.2557C12.6195 12.2557 13.305 12.0709 13.9093 11.7198L21.1344 7.58978" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>       
-                    <svg id="card-open-icon" style="color: rgb(52, 52, 52);" width="54" height="54" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.85 6.09502L10.1 3.25502C10.6837 2.93993 11.3367 2.77496 12 2.77496C12.6633 2.77496 13.3163 2.93993 13.9 3.25502L19.15 6.09502C19.7835 6.43697 20.313 6.94354 20.6826 7.5613C21.0522 8.17907 21.2482 8.88513 21.25 9.60502V17.225C21.25 18.2859 20.8286 19.3033 20.0784 20.0534C19.3283 20.8036 18.3109 21.225 17.25 21.225H6.75C5.68913 21.225 4.67172 20.8036 3.92157 20.0534C3.17143 19.3033 2.75 18.2859 2.75 17.225V9.60502C2.75179 8.88513 2.94783 8.17907 3.31743 7.5613C3.68703 6.94354 4.21651 6.43697 4.85 6.09502Z" stroke="currentColor" stroke-width="1.5"/>
-                        <path d="M2.91 8.495L10 12.595C10.6081 12.9461 11.2979 13.1309 12 13.1309C12.7022 13.1309 13.3919 12.9461 14 12.595L21.14 8.595" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                                         
-                </div>
+        <div class="overlay"></div>
+        <div class="circle" data-bs-dismiss="modal" onclick="play_music()">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <svg
+            id="card-icon"
+            style="color: rgb(52, 52, 52)"
+            width="54"
+            height="54"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="2.68159"
+              y="3.5"
+              width="18.5"
+              height="17"
+              rx="4"
+              stroke="currentColor"
+              stroke-width="1.5"
+            />
+            <path
+              d="M2.72875 7.58978L9.93399 11.7198C10.5383 12.0709 11.2238 12.2557 11.9216 12.2557C12.6195 12.2557 13.305 12.0709 13.9093 11.7198L21.1344 7.58978"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <svg
+            id="card-open-icon"
+            style="color: rgb(52, 52, 52)"
+            width="54"
+            height="54"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.85 6.09502L10.1 3.25502C10.6837 2.93993 11.3367 2.77496 12 2.77496C12.6633 2.77496 13.3163 2.93993 13.9 3.25502L19.15 6.09502C19.7835 6.43697 20.313 6.94354 20.6826 7.5613C21.0522 8.17907 21.2482 8.88513 21.25 9.60502V17.225C21.25 18.2859 20.8286 19.3033 20.0784 20.0534C19.3283 20.8036 18.3109 21.225 17.25 21.225H6.75C5.68913 21.225 4.67172 20.8036 3.92157 20.0534C3.17143 19.3033 2.75 18.2859 2.75 17.225V9.60502C2.75179 8.88513 2.94783 8.17907 3.31743 7.5613C3.68703 6.94354 4.21651 6.43697 4.85 6.09502Z"
+              stroke="currentColor"
+              stroke-width="1.5"
+            />
+            <path
+              d="M2.91 8.495L10 12.595C10.6081 12.9461 11.2979 13.1309 12 13.1309C12.7022 13.1309 13.3919 12.9461 14 12.595L21.14 8.595"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
 
-                <p>¡Bienvenidos!</p>  
+        <p>¡Bienvenidos!</p>
       </div>
     </div>
   </div>
-<body> 
-
+  <body>
     <!-- <div class="hero">
         <div class="content">
             <h1>Caroline Ortiz</h1>
@@ -71,184 +124,339 @@
     </div> -->
 
     <div class="container-inicio">
-        <img src="static/images/caro-incio.jpeg" alt="Caroline" class="background-image">
-        <div class="text-overlay">
-            <h1>Caroline Ortiz</h1>
-            <p>¡MIS XV AÑOS!</p>
-            <p>Jueves, 18 de Julio de 2024</p>
-        </div>
+      <img
+        src="static/images/caro-incio.jpeg"
+        alt="Caroline"
+        class="background-image"
+      />
+      <div class="text-overlay">
+        <h1>Caroline Ortiz</h1>
+        <p>¡MIS XV AÑOS!</p>
+        <p>Jueves, 18 de Julio de 2024</p>
+      </div>
     </div>
 
     <div class="mis_xv">
-        <audio id="audio" src="static/audio/the-beat-of-nature-122841.mp3" autoplay="true" muted="muted"></audio>
-        <button onclick="play_music()" class="btn btn-light" id="toggleAudio">
-            <svg id="btn-play" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.64386 5.02467V18.9711C5.64455 19.257 5.72521 19.5371 5.87674 19.7796C6.02827 20.0221 6.24461 20.2173 6.50132 20.3433C6.75802 20.4693 7.04484 20.5209 7.32935 20.4924C7.61387 20.4638 7.88473 20.3563 8.11131 20.1818L17.7665 12.6722C17.9577 12.523 18.1108 12.3305 18.2131 12.1106C18.3154 11.8907 18.3641 11.6497 18.3551 11.4073C18.3461 11.165 18.2798 10.9282 18.1615 10.7165C18.0432 10.5047 17.8763 10.3241 17.6746 10.1894L8.01935 3.75264C7.78885 3.60084 7.52164 3.5141 7.24593 3.50158C6.97022 3.48906 6.69625 3.55122 6.45294 3.68151C6.20964 3.8118 6.00603 4.00537 5.86362 4.24178C5.72121 4.4782 5.64528 4.74868 5.64386 5.02467Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-                
+      <audio
+        id="audio"
+        src="static/audio/the-beat-of-nature-122841.mp3"
+        autoplay="true"
+        muted="muted"
+      ></audio>
+      <button onclick="play_music()" class="btn btn-light" id="toggleAudio">
+        <svg
+          id="btn-play"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5.64386 5.02467V18.9711C5.64455 19.257 5.72521 19.5371 5.87674 19.7796C6.02827 20.0221 6.24461 20.2173 6.50132 20.3433C6.75802 20.4693 7.04484 20.5209 7.32935 20.4924C7.61387 20.4638 7.88473 20.3563 8.11131 20.1818L17.7665 12.6722C17.9577 12.523 18.1108 12.3305 18.2131 12.1106C18.3154 11.8907 18.3641 11.6497 18.3551 11.4073C18.3461 11.165 18.2798 10.9282 18.1615 10.7165C18.0432 10.5047 17.8763 10.3241 17.6746 10.1894L8.01935 3.75264C7.78885 3.60084 7.52164 3.5141 7.24593 3.50158C6.97022 3.48906 6.69625 3.55122 6.45294 3.68151C6.20964 3.8118 6.00603 4.00537 5.86362 4.24178C5.72121 4.4782 5.64528 4.74868 5.64386 5.02467Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
 
-            <svg id="btn-pause" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.5 4.5H5.5C4.94772 4.5 4.5 4.94772 4.5 5.5V18.5C4.5 19.0523 4.94772 19.5 5.5 19.5H8.5C9.05229 19.5 9.5 19.0523 9.5 18.5V5.5C9.5 4.94772 9.05229 4.5 8.5 4.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M18.5 4.5H15.5C14.9477 4.5 14.5 4.94772 14.5 5.5V18.5C14.5 19.0523 14.9477 19.5 15.5 19.5H18.5C19.0523 19.5 19.5 19.0523 19.5 18.5V5.5C19.5 4.94772 19.0523 4.5 18.5 4.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-                
-        </button>
+        <svg
+          id="btn-pause"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.5 4.5H5.5C4.94772 4.5 4.5 4.94772 4.5 5.5V18.5C4.5 19.0523 4.94772 19.5 5.5 19.5H8.5C9.05229 19.5 9.5 19.0523 9.5 18.5V5.5C9.5 4.94772 9.05229 4.5 8.5 4.5Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M18.5 4.5H15.5C14.9477 4.5 14.5 4.94772 14.5 5.5V18.5C14.5 19.0523 14.9477 19.5 15.5 19.5H18.5C19.0523 19.5 19.5 19.0523 19.5 18.5V5.5C19.5 4.94772 19.0523 4.5 18.5 4.5Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
     </div>
 
-<div class="section-mensaje-inicio">
-    <div class="mensaje_inicio">
-        Estoy muy emocionada de invitarlos a
-        celebrar conmigo una noche muy especial en mi fiesta de quince años.
-        Será un momento lleno de alegría y recuerdos inolvidables, y no seria lo mismo sin ustedes.
-        <br>
-        ¡Espero verlos alli y compartir juntos este
-        momento.
-        <br>
-        Con mucho cariño,
-        Caroline!
+    <div class="section-mensaje-inicio">
+      <div class="mensaje_inicio">
+        Estoy muy emocionada de invitarlos a celebrar conmigo una noche muy
+        especial en mi fiesta de quince años. Será un momento lleno de alegría y
+        recuerdos inolvidables, y no seria lo mismo sin ustedes.
+        <br />
+        ¡Espero verlos alli y compartir juntos este momento.
+        <br />
+        Con mucho cariño, Caroline!
+      </div>
     </div>
-</div>
 
-<div class="seccion_faltan"> 
-    <div class="contenedor-faltan">
+    <div class="seccion_faltan">
+      <div class="contenedor-faltan">
         <div class="te_espero">Te espero en...</div>
         <div class="contenedor-dias-numero fade-in">
-            <h1 id="contador-dias">00</h1>
+          <h1 id="contador-dias">00</h1>
         </div>
 
         <div class="contenedor-dias fade-in">
-            <h2>DÍAS</h2>
+          <h2>DÍAS</h2>
         </div>
-    
+
         <div class="contador fade-in">
-            <h1 id="contador-horas">00</h1>
-            <h2>HRS</h2>
-            <h1 id="contador-minutos">00</h1>
-            <h2>MIN</h2>
-            <h1 id="contador-segundos">00</h1>
-            <h2>SEG</h2>
+          <h1 id="contador-horas">00</h1>
+          <h2>HRS</h2>
+          <h1 id="contador-minutos">00</h1>
+          <h2>MIN</h2>
+          <h1 id="contador-segundos">00</h1>
+          <h2>SEG</h2>
         </div>
+      </div>
     </div>
-</div>
 
-
-    <div class="section fade-in" >
-        <h2 class="fade-in">Con la Bendicion de Dios y Mis Padres</h2>
-        <img class="flores-pie fade-in" src="static/images/flores-pie.png" width="200px" alt="">
-        <p class="fade-in">Sra. Veronica de la Riva</p>
-        <p class="fade-in">Sr. Israel Ortiz</p>
-        <br>
-        <hr class="featurette-divider">
-        <br>
-        <h2 class="fade-in">Y en Compañia de Mis Padrinos</h2>
-        <img class="flores-pie fade-in" src="static/images/flores-pie.png" width="200px" alt="">
-        <p class="fade-in">Sra. Blanca Garcia</p>
-        <p class="fade-in">Sr. Jesus Orozco</p>
+    <div class="section fade-in">
+      <h2 class="fade-in">Con la Bendicion de Dios y Mis Padres</h2>
+      <img
+        class="flores-pie fade-in"
+        src="static/images/flores-pie.png"
+        width="200px"
+        alt=""
+      />
+      <p class="fade-in">Sra. Veronica de la Riva</p>
+      <p class="fade-in">Sr. Israel Ortiz</p>
+      <br />
+      <hr class="featurette-divider" />
+      <br />
+      <h2 class="fade-in">Y en Compañia de Mis Padrinos</h2>
+      <img
+        class="flores-pie fade-in"
+        src="static/images/flores-pie.png"
+        width="200px"
+        alt=""
+      />
+      <p class="fade-in">Sra. Blanca Garcia</p>
+      <p class="fade-in">Sr. Jesus Orozco</p>
     </div>
 
     <div class="donde_cuando fade-in">¿Donde y Cuando?</div>
 
     <div class="section">
-        <div class="left-animation row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading fw-normal lh-1">Iglesia<span class="text-body-secondary"></span></h2>
-                <p class="lead">Parroquia San Juan Bautista</p>
-                <a href="https://maps.app.goo.gl/tnnA6c4GeHRNXyx49" target="_blank" class="lead">Hidalgo 100, El Mezquital, 66630 Cdad. Apodaca, N.L.
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 12.7998C13.8502 12.7998 15.3499 11.3001 15.3499 9.4499C15.3499 7.59978 13.8502 6.09995 12 6.09995C10.1498 6.09995 8.65004 7.59978 8.65004 9.4499C8.65004 11.3001 10.1498 12.7998 12 12.7998Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
-                        <path d="M12 2.75C5.3001 2.75 4.18345 8.33325 5.3001 12.5654C6.28275 16.2726 9.23071 18.8074 11.1737 20.8844C11.2783 20.9995 11.4059 21.0915 11.5482 21.1545C11.6905 21.2175 11.8444 21.25 12 21.25C12.1556 21.25 12.3095 21.2175 12.4518 21.1545C12.594 21.0915 12.7217 20.9995 12.8263 20.8844C14.7693 18.8074 17.7172 16.2726 18.6999 12.5654C19.8165 8.33325 18.6999 2.75 12 2.75Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
-                        </svg>                    
-                </a>
-                <p class="lead">Hora: 6:00pm 
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15.1719 15.1719L12.0053 12.0053V5.67194" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
-                        <path d="M12 21.5C17.2467 21.5 21.5 17.2467 21.5 12C21.5 6.7533 17.2467 2.5 12 2.5C6.7533 2.5 2.5 6.7533 2.5 12C2.5 17.2467 6.7533 21.5 12 21.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </p>
-            </div>
-            <div class="col-md-5">
-                <div class="hacienda-container">
-                    <div class="reveal">
-                    <img style="border-radius: 5px;" src="static/images/parroquia-bautista.png" width="200px" height="200px" alt="">
-                    </div>                    
-                </div>
-            </div>
+      <div class="left-animation row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">
+            Iglesia<span class="text-body-secondary"></span>
+          </h2>
+          <p class="lead">Parroquia San Juan Bautista</p>
+          <a
+            href="https://maps.app.goo.gl/tnnA6c4GeHRNXyx49"
+            target="_blank"
+            class="lead"
+            >Hidalgo 100, El Mezquital, 66630 Cdad. Apodaca, N.L.
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 12.7998C13.8502 12.7998 15.3499 11.3001 15.3499 9.4499C15.3499 7.59978 13.8502 6.09995 12 6.09995C10.1498 6.09995 8.65004 7.59978 8.65004 9.4499C8.65004 11.3001 10.1498 12.7998 12 12.7998Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+              />
+              <path
+                d="M12 2.75C5.3001 2.75 4.18345 8.33325 5.3001 12.5654C6.28275 16.2726 9.23071 18.8074 11.1737 20.8844C11.2783 20.9995 11.4059 21.0915 11.5482 21.1545C11.6905 21.2175 11.8444 21.25 12 21.25C12.1556 21.25 12.3095 21.2175 12.4518 21.1545C12.594 21.0915 12.7217 20.9995 12.8263 20.8844C14.7693 18.8074 17.7172 16.2726 18.6999 12.5654C19.8165 8.33325 18.6999 2.75 12 2.75Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+              />
+            </svg>
+          </a>
+          <p class="lead">
+            Hora: 6:00pm
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.1719 15.1719L12.0053 12.0053V5.67194"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+              />
+              <path
+                d="M12 21.5C17.2467 21.5 21.5 17.2467 21.5 12C21.5 6.7533 17.2467 2.5 12 2.5C6.7533 2.5 2.5 6.7533 2.5 12C2.5 17.2467 6.7533 21.5 12 21.5Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </p>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="left-animation row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading fw-normal lh-1">Salon de Fiesta<span class="text-body-secondary"></span></h2>
-                <p class="lead">Hacienda el Manantial</p>
-                <a href="https://maps.app.goo.gl/nFcwP8r7kDjfrWHw8" target="_blank" class="lead">Av. de la Concordia 539, Bosques Real I, 66637 Cdad. Apodaca, N.L.
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 12.7998C13.8502 12.7998 15.3499 11.3001 15.3499 9.4499C15.3499 7.59978 13.8502 6.09995 12 6.09995C10.1498 6.09995 8.65004 7.59978 8.65004 9.4499C8.65004 11.3001 10.1498 12.7998 12 12.7998Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
-                        <path d="M12 2.75C5.3001 2.75 4.18345 8.33325 5.3001 12.5654C6.28275 16.2726 9.23071 18.8074 11.1737 20.8844C11.2783 20.9995 11.4059 21.0915 11.5482 21.1545C11.6905 21.2175 11.8444 21.25 12 21.25C12.1556 21.25 12.3095 21.2175 12.4518 21.1545C12.594 21.0915 12.7217 20.9995 12.8263 20.8844C14.7693 18.8074 17.7172 16.2726 18.6999 12.5654C19.8165 8.33325 18.6999 2.75 12 2.75Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
-                        </svg>                    
-                </a>
-                <p class="lead">Hora: 7:30pm 
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15.1719 15.1719L12.0053 12.0053V5.67194" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
-                        <path d="M12 21.5C17.2467 21.5 21.5 17.2467 21.5 12C21.5 6.7533 17.2467 2.5 12 2.5C6.7533 2.5 2.5 6.7533 2.5 12C2.5 17.2467 6.7533 21.5 12 21.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </p>
+        <div class="col-md-5">
+          <div class="hacienda-container">
+            <div class="reveal">
+              <img
+                style="border-radius: 5px"
+                src="static/images/parroquia-bautista.png"
+                width="200px"
+                height="200px"
+                alt=""
+              />
             </div>
-            <div class="col-md-5">
-                <div class="hacienda-container">
-                    <div class="reveal">
-                        <img style="border-radius: 5px;" src="static/images/hacienda-manantial.png" width="200px" height="200px" alt="">
-                    </div>                    
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="left-animation row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">
+            Salon de Fiesta<span class="text-body-secondary"></span>
+          </h2>
+          <p class="lead">Hacienda el Manantial</p>
+          <a
+            href="https://maps.app.goo.gl/nFcwP8r7kDjfrWHw8"
+            target="_blank"
+            class="lead"
+            >Av. de la Concordia 539, Bosques Real I, 66637 Cdad. Apodaca, N.L.
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 12.7998C13.8502 12.7998 15.3499 11.3001 15.3499 9.4499C15.3499 7.59978 13.8502 6.09995 12 6.09995C10.1498 6.09995 8.65004 7.59978 8.65004 9.4499C8.65004 11.3001 10.1498 12.7998 12 12.7998Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+              />
+              <path
+                d="M12 2.75C5.3001 2.75 4.18345 8.33325 5.3001 12.5654C6.28275 16.2726 9.23071 18.8074 11.1737 20.8844C11.2783 20.9995 11.4059 21.0915 11.5482 21.1545C11.6905 21.2175 11.8444 21.25 12 21.25C12.1556 21.25 12.3095 21.2175 12.4518 21.1545C12.594 21.0915 12.7217 20.9995 12.8263 20.8844C14.7693 18.8074 17.7172 16.2726 18.6999 12.5654C19.8165 8.33325 18.6999 2.75 12 2.75Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+              />
+            </svg>
+          </a>
+          <p class="lead">
+            Hora: 7:30pm
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.1719 15.1719L12.0053 12.0053V5.67194"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+              />
+              <path
+                d="M12 21.5C17.2467 21.5 21.5 17.2467 21.5 12C21.5 6.7533 17.2467 2.5 12 2.5C6.7533 2.5 2.5 6.7533 2.5 12C2.5 17.2467 6.7533 21.5 12 21.5Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </p>
+        </div>
+        <div class="col-md-5">
+          <div class="hacienda-container">
+            <div class="reveal">
+              <img
+                style="border-radius: 5px"
+                src="static/images/hacienda-manantial.png"
+                width="200px"
+                height="200px"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="contenedor-timeline fade-in">
-        <div class="timeline">
-            <h2 class="left-animation">Itinerario</h2>
-            <div class="event fade-in">
-                <div class="time">18:00 HRS</div>
-                <div class="details">
-                    <h3>Ceremonia Religiosa</h3>
-                    <img src="https://img.icons8.com/ios-filled/50/000000/church.png" alt="Iglesia">
-                </div>
-            </div>
-            <div class="event fade-in">
-                <div class="time">19:30 HRS</div>
-                <div class="details">
-                    <h3>Presentación</h3>
-                    <img src="https://img.icons8.com/ios-filled/50/000000/wedding-dress.png" alt="Presentación">
-                </div>
-            </div>
-            <div class="event fade-in">
-                <div class="time">22:00 HRS</div>
-                <div class="details">
-                    <h3>Celebración</h3>
-                    <img src="https://img.icons8.com/ios-filled/50/000000/restaurant.png" alt="Cena">
-                </div>
-            </div>
-            <div class="event fade-in">
-                <div class="time">23:00 HRS</div>
-                <div class="details">
-                    <h3>A bailar</h3>
-                    <img src="https://img.icons8.com/ios-filled/50/000000/musical-notes.png" alt="Baile">
-                </div>
-            </div>
-            <div class="event fade-in">
-                <div class="time">1:00 HRS</div>
-                <div class="details">
-                    <h3>Fin del Evento</h3>
-                    <img src="static/images/dormir.png"  alt="Baile">
-                </div>
-            </div>
+      <div class="timeline">
+        <h2 class="left-animation">Itinerario</h2>
+        <div class="event fade-in">
+          <div class="time">18:00 HRS</div>
+          <div class="details">
+            <h3>Ceremonia Religiosa</h3>
+            <img
+              src="https://img.icons8.com/ios-filled/50/000000/church.png"
+              alt="Iglesia"
+            />
+          </div>
         </div>
+        <div class="event fade-in">
+          <div class="time">19:30 HRS</div>
+          <div class="details">
+            <h3>Presentación</h3>
+            <img
+              src="https://img.icons8.com/ios-filled/50/000000/wedding-dress.png"
+              alt="Presentación"
+            />
+          </div>
+        </div>
+        <div class="event fade-in">
+          <div class="time">22:00 HRS</div>
+          <div class="details">
+            <h3>Celebración</h3>
+            <img
+              src="https://img.icons8.com/ios-filled/50/000000/restaurant.png"
+              alt="Cena"
+            />
+          </div>
+        </div>
+        <div class="event fade-in">
+          <div class="time">23:00 HRS</div>
+          <div class="details">
+            <h3>A bailar</h3>
+            <img
+              src="https://img.icons8.com/ios-filled/50/000000/musical-notes.png"
+              alt="Baile"
+            />
+          </div>
+        </div>
+        <div class="event fade-in">
+          <div class="time">1:00 HRS</div>
+          <div class="details">
+            <h3>Fin del Evento</h3>
+            <img src="static/images/dormir.png" alt="Baile" />
+          </div>
+        </div>
+      </div>
     </div>
     <div class="mi_galeria fade-in">
-        
-        Mi Galeria
-    <!-- <div class="external left-animation">
+      Mi Galeria
+      <!-- <div class="external left-animation">
        
         <div class="horizontal-scroll-wrapper">
             <div class="img-wrapper slower">
@@ -297,95 +505,110 @@
         </div>
     </div> -->
 
-    <!-- <div class="section-fotos"> -->
-        <div class="row">
-            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                <img
-                src="static/images/caro6.jpeg"
-                  class="w-100 shadow-1-strong rounded mb-4 fade-in"
-                  alt="Boat on Calm Water"
-                />
+      <!-- <div class="section-fotos"> -->
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <img
+            src="static/images/caro6.jpeg"
+            class="w-100 shadow-1-strong rounded mb-4 fade-in"
+            alt="Boat on Calm Water"
+          />
 
-              <img
-              src="static/images/caro7.jpeg"
-                class="w-100 shadow-1-strong rounded mb-4 fade-in"
-                alt="Boat on Calm Water"
-              />
-          
-            </div>
-          
-            <div class="col-lg-4 mb-4 mb-lg-0">
+          <img
+            src="static/images/caro7.jpeg"
+            class="w-100 shadow-1-strong rounded mb-4 fade-in"
+            alt="Boat on Calm Water"
+          />
+        </div>
 
-              <img
-              src="static/images/caro11.jpeg"
-                class="w-100 shadow-1-strong rounded mb-4 fade-in"
-                alt="Waves at Sea"
-              />
-          
-              <img
-                src="static/images/caro8.jpeg"
-                class="w-100 shadow-1-strong rounded mb-4 fade-in"
-              />
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img
+            src="static/images/caro11.jpeg"
+            class="w-100 shadow-1-strong rounded mb-4 fade-in"
+            alt="Waves at Sea"
+          />
 
-            </div>
-          
-            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <img
+            src="static/images/caro8.jpeg"
+            class="w-100 shadow-1-strong rounded mb-4 fade-in"
+          />
+        </div>
 
-            <img
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <img
             src="static/images/caro9.jpeg"
             class="w-100 shadow-1-strong rounded mb-4 fade-in"
-            />  
+          />
 
-            <img
+          <img
             src="static/images/caro4.jpeg"
             class="w-100 shadow-1-strong rounded mb-4 fade-in"
-            />  
-            </div>
-          </div>
-    <!-- </div> -->
-    
-</div>
-<div class="gift-section">
-    <h2 class="fade-in">Regalos</h2>
-    <p class="intro fade-in">Tu presencia es mi mayor regalo, pero si deseas tener un detalle conmigo, también lo puedes hacer:</p>
-    <div class="gift-options">
-        <div class="left-animation">
-            <div class="gift-option">
-                <img src="static/images/giftbox.png" alt="regalo">
-                <p>Regalo</p>
-            </div>
+          />
         </div>
-        <div class="left-animation">
-            <div class="gift-option">
-                <img src="static/images/gift.png" alt="Lluvia de Sobres">
-                <p>Lluvia de Sobres</p>
-            </div>
-        </div>
+      </div>
+      <!-- </div> -->
     </div>
-</div>
+    <div class="gift-section">
+      <h2 class="fade-in">Regalos</h2>
+      <p class="intro fade-in">
+        Tu presencia es mi mayor regalo, pero si deseas tener un detalle
+        conmigo, también lo puedes hacer:
+      </p>
+      <div class="gift-options">
+        <div class="left-animation">
+          <div class="gift-option">
+            <img src="static/images/giftbox.png" alt="regalo" />
+            <p>Regalo</p>
+          </div>
+        </div>
+        <div class="left-animation">
+          <div class="gift-option">
+            <img src="static/images/gift.png" alt="Lluvia de Sobres" />
+            <p>Lluvia de Sobres</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<div class="asistencia row">
-    <div class="col-sm-6 fade-in img-confirmar">
+    <div class="asistencia row">
+      <div class="col-sm-6 fade-in img-confirmar">
         <!-- <div class="img-confirmar fade-in">
             
         </div> -->
-    </div>
-    <div class="col-sm-6 fade-in card text-center text-confirm">
+      </div>
+      <div class="col-sm-6 fade-in card text-center text-confirm">
         <!-- <div class="card text-center fade-in text-confirm"> -->
-                <h1 class="display-4">¡Confirma tu Asistencia!</h1>
-                <hr class="my-4">
-                <p class="lead">Confirmar tu asistencia antes del 1 de julio 2024, escaneando el código QR o en el botón "Confirmar Asistencia"</p>
-                <img src="static/images/qr_form.png" width="300px" height="300px" alt="">
-                <p class="lead">
-                    <br>
-                  <a id="btn-confirm-asistencia" class="btn btn-light btn-lg" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScLLyaK9LGChkGF1-Ni2-t_Zw97e3Rf42XYTRjv_uibbdA9_g/viewform" role="button">Confirmar Asistencia</a>
-        <!-- </div> -->
+        <h1 class="display-4">¡Confirma tu Asistencia!</h1>
+        <hr class="my-4" />
+        <p class="lead">
+          Confirmar tu asistencia antes del 1 de julio 2024, escaneando el
+          código QR o en el botón "Confirmar Asistencia"
+        </p>
+        <img
+          src="static/images/qr_form.png"
+          width="300px"
+          height="300px"
+          alt=""
+        />
+        <p class="lead">
+          <br />
+          <a
+            id="btn-confirm-asistencia"
+            class="btn btn-light btn-lg"
+            target="_blank"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScLLyaK9LGChkGF1-Ni2-t_Zw97e3Rf42XYTRjv_uibbdA9_g/viewform"
+            role="button"
+            >Confirmar Asistencia</a
+          >
+          <!-- </div> -->
+        </p>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 
-
-
-<script src="static/javascript/script-animation-gsp.js"></script>
-
+  <!-- Additional JS -->
+  <script src="static/javascript/audio.js"></script>
+  <script src="static/javascript/script-animation-gsp.js"></script>
+  <script type="module" src="static/javascript/urlparams.js"></script>
+  <script type="module" src="static/javascript/script.js"></script>
 </html>

@@ -930,6 +930,22 @@ const getInvitados = () => {
         "adultos": 1,
         "ninos": 0,
         "confirmado": "FALSE"
+      },
+      {
+        "id": 115,
+        "uuid": 28671361,
+        "nombre": "Arturo Lopez",
+        "adultos": 1,
+        "ninos": 0,
+        "confirmado": "FALSE"
+      },
+      {
+        "id": 116,
+        "uuid": 13892317,
+        "nombre": "Fam. Vargas Cirilo",
+        "adultos": 4,
+        "ninos": 0,
+        "confirmado": "FALSE"
       }
     ]
 }

@@ -486,7 +486,7 @@ const getInvitados = () => {
       {
         "id": 59,
         "uuid": 79708175,
-        "nombre": "Dylan",
+        "nombre": "Lizeth",
         "adultos": 1,
         "ninos": 0,
         "confirmado": "FALSE"
@@ -606,7 +606,7 @@ const getInvitados = () => {
       {
         "id": 74,
         "uuid": 87255757,
-        "nombre": "Alec",
+        "nombre": "Alison",
         "adultos": 1,
         "ninos": 0,
         "confirmado": "FALSE"
@@ -798,7 +798,7 @@ const getInvitados = () => {
       {
         "id": 98,
         "uuid": 99939268,
-        "nombre": "Magie",
+        "nombre": "Sofía",
         "adultos": 1,
         "ninos": 0,
         "confirmado": "FALSE"

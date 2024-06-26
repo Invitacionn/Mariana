@@ -946,6 +946,38 @@ const getInvitados = () => {
         "adultos": 4,
         "ninos": 0,
         "confirmado": "FALSE"
+      },
+      {
+        "id": 117,
+        "uuid": 514177293,
+        "nombre": "Casas Arellano",
+        "adultos": 3,
+        "ninos": 0,
+        "confirmado": "FALSE"
+      },
+      {
+        "id": 118,
+        "uuid": 9931202047,
+        "nombre": "Enrique Caraza",
+        "adultos": 2,
+        "ninos": 0,
+        "confirmado": "FALSE"
+      },
+      {
+        "id": 119,
+        "uuid": 14075318,
+        "nombre": "Raul Borjas",
+        "adultos": 2,
+        "ninos": 0,
+        "confirmado": "FALSE"
+      },
+      {
+        "id": 120,
+        "uuid": 36210489,
+        "nombre": "Liliana",
+        "adultos": 1,
+        "ninos": 0,
+        "confirmado": "FALSE"
       }
     ]
 }

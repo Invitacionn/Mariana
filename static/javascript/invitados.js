@@ -978,6 +978,14 @@ const getInvitados = () => {
         "adultos": 1,
         "ninos": 0,
         "confirmado": "FALSE"
+      },
+      {
+        "id": 121,
+        "uuid": 62626179,
+        "nombre": "Veida",
+        "adultos": 2,
+        "ninos": 0,
+        "confirmado": "FALSE"
       }
     ]
 }

@@ -986,6 +986,14 @@ const getInvitados = () => {
         "adultos": 2,
         "ninos": 0,
         "confirmado": "FALSE"
+      },
+      {
+        "id": 122,
+        "uuid": 51436279,
+        "nombre": "Fam. López Coronado",
+        "adultos": 2,
+        "ninos": 0,
+        "confirmado": "FALSE"
       }
     ]
 }

@@ -1005,7 +1005,7 @@ const getInvitados = () => {
       },
       {
         "id": 124,
-        "uuid": 664626837,
+        "uuid": 6646268371,
         "nombre": "Vanessa",
         "adultos": 1,
         "ninos": 0,
